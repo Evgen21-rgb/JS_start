@@ -22,7 +22,7 @@ const guess = 4;
 
 
 const inStock = true;
-const onSale = true;
+const onSale = false
 
 // if(inStock === true){
 //     if(onSale === true){
@@ -30,19 +30,27 @@ const onSale = true;
 //     }
 // }
 
-// if(inStock ===true && onSale === true){
+// if(inStock && onSale){
 //     alert("Buy!!!")
 // }
 
 const price = 100;
 
-if(inStock === true && (onSale === true || price < 80)){
-    alert("Buy!!!");
+if(inStock  && (onSale || price < 80)){
+alert("Buy!!!")
 }
+//     alert("Buy!!!");
 
 
+const temp = 83
+const willRain = true;
+const humid = (willRain && temp > 80);
 
+console.log(humid);
 
+// const buyIt = (onSale && inStock) // true
+
+const buyIt =(onSale && inStock) // false
 
 
 
