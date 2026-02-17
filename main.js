@@ -1,9 +1,52 @@
+// let dogName = "rover";
+// let dogWeigt = 23;
+// if(dogWeigt > 20) {
+//     console.log(dogName + "says WOOF  WOOF");
+// } else {
+//     console.log(dogName + "says woof woof");
+// }
+// dogName = "spot";
+// dogWeigt = 13;
+// if(dogWeigt > 20) {
+//     console.log(dogName + "says WOOF  WOOF");
+// } else {
+//     console.log(dogName + "says woof woof");
+// }
+// dogName = "spike";
+// dogWeigt = 53;
+// if(dogWeigt > 20) {
+//     console.log(dogName + "says WOOF  WOOF");
+// } else {
+//     console.log(dogName + "says woof woof");
+// }
+// dogName = "lady";
+// dogWeigt = 17;
+// if(dogWeigt > 20) {
+//     console.log(dogName + "says WOOF  WOOF");
+// } else {
+//     console.log(dogName + "says woof woof");
+// }
 
-const location_1 = 3;
-const location_2 = 4;
-const location_3 = 5;
+function bark (name, weigt) {
+    if(weigt > 20) {
+    console.log(name + "says WOOF  WOOF");
+} else {
+    console.log(name + "says woof woof");
+}
+}
+bark("rover", 23)
+bark("spot", 13)
+bark("spike", 53)
+bark("lady", 17)
 
-const guess = 4;
+
+
+
+// const location_1 = 3;
+// const location_2 = 4;
+// const location_3 = 5;
+
+// const guess = 4;
 // if (guess === location_1 || guess === location_2 || guess === location_3) {
 //     alert("HIT!")
 // } else {
@@ -21,8 +64,8 @@ const guess = 4;
 // }
 
 
-const inStock = true;
-const onSale = false
+// const inStock = true;
+// const onSale = false
 
 // if(inStock === true){
 //     if(onSale === true){
@@ -34,23 +77,23 @@ const onSale = false
 //     alert("Buy!!!")
 // }
 
-const price = 100;
+// const price = 100;
 
-if(inStock  && (onSale || price < 80)){
-alert("Buy!!!")
-}
-//     alert("Buy!!!");
+// if(inStock  && (onSale || price < 80)){
+// alert("Buy!!!")
+// }
+// //     alert("Buy!!!");
 
 
-const temp = 83
-const willRain = true;
-const humid = (willRain && temp > 80);
+// const temp = 83
+// const willRain = true;
+// const humid = (willRain && temp > 80);
 
-console.log(humid);
+// console.log(humid);
 
-// const buyIt = (onSale && inStock) // true
+// // const buyIt = (onSale && inStock) // true
 
-const buyIt =(onSale && inStock) // false
+// const buyIt =(onSale && inStock) // false
 
 
 
@@ -67,5 +110,10 @@ const buyIt =(onSale && inStock) // false
 // count = count + 1
 // document.write(count + ": " + sum + "<br>")
 // }
+
+
+
+
+
 
 
