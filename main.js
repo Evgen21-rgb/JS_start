@@ -1,3 +1,36 @@
+function makeTea(cups, tea) {
+    console.log("Brewing" + cups + " cups of " + tea);
+}
+
+// правильный вызов функции
+makeTea(3, "Earl Grey")
+
+// недостающие аргументы функции
+makeTea(3)
+
+//"лишние" аргументы функций
+makeTea(3, "Earl Grey", "hey ma!" , 42);
+
+// аргументы переданы в неверном порядке 
+makeTea("Earl Grey" , 3)
+
+
+// функция без параметров
+function barkAThemoon() {
+console.log("Woooooooooooo");
+}
+ barkAThemoon();
+
+
+
+
+
+
+
+
+
+
+
 // let dogName = "rover";
 // let dogWeigt = 23;
 // if(dogWeigt > 20) {
@@ -27,17 +60,17 @@
 //     console.log(dogName + "says woof woof");
 // }
 
-function bark (name, weigt) {
-    if(weigt > 20) {
-    console.log(name + "says WOOF  WOOF");
-} else {
-    console.log(name + "says woof woof");
-}
-}
-bark("rover", 23)
-bark("spot", 13)
-bark("spike", 53)
-bark("lady", 17)
+// function bark (name, weigt) {
+//     if(weigt > 20) {
+//     console.log(name + "says WOOF  WOOF");
+// } else {
+//     console.log(name + "says woof woof");
+// }
+// }
+// bark("rover", 23)
+// bark("spot", 13)
+// bark("spike", 53)
+// bark("lady", 17)
 
 
 
