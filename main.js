@@ -1,32 +1,53 @@
-function makeTea(cups, tea) {
-    console.log("Brewing" + cups + " cups of " + tea);
+// depsit
+const depositAmount = 1000
+const yearlyRate = 15
+const depositTermInYears = 2 
+// 
+function getDepositIncome(amount, rate, term) {
+let depositIncome = 0
+let count = 0
+
+while (count < term) {
+    depositIncome = depositIncome + amount * (rate / 100)
+count = count + 1
+}
+return depositIncome
 }
 
-// правильный вызов функции
-makeTea(3, "Earl Grey")
+//total
 
-// недостающие аргументы функции
-makeTea(3)
+ const depositIncome_1 = getDepositIncome(depositAmount, yearlyRate, depositTermInYears)
+ const depositIncome_2 = getDepositIncome(1500, 16, 3)
+const totalIncome = depositIncome_1 + depositIncome_2
 
-//"лишние" аргументы функций
-makeTea(3, "Earl Grey", "hey ma!" , 42);
-
-// аргументы переданы в неверном порядке 
-makeTea("Earl Grey" , 3)
-
-
-// функция без параметров
-function barkAThemoon() {
-console.log("Woooooooooooo");
-}
- barkAThemoon();
+console.log(totalIncome);
 
 
 
 
 
+// function makeTea(cups, tea) {
+//     console.log("Brewing" + cups + " cups of " + tea);
+// }
+
+// // правильный вызов функции
+// makeTea(3, "Earl Grey")
+
+// // недостающие аргументы функции
+// makeTea(3)
+
+// //"лишние" аргументы функций
+// makeTea(3, "Earl Grey", "hey ma!" , 42);
+
+// // аргументы переданы в неверном порядке 
+// makeTea("Earl Grey" , 3)
 
 
+// // функция без параметров
+// function barkAThemoon() {
+// console.log("Woooooooooooo");
+// }
+//  barkAThemoon();
 
 
 
@@ -71,7 +92,6 @@ console.log("Woooooooooooo");
 // bark("spot", 13)
 // bark("spike", 53)
 // bark("lady", 17)
-
 
 
 
