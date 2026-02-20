@@ -1,26 +1,31 @@
 // depsit
-const depositAmount = 1000
-const yearlyRate = 15
-const depositTermInYears = 2 
-// 
-function getDepositIncome(amount, rate, term) {
-let depositIncome = 0
-let count = 0
+const depositAmount = 1000;
+const yearlyRate = 15;
+const depositTermInYears = 2;
+//
+ function wrapper() {
+  function getDepositIncome(amount, rate, term) {
+  let depositIncome = 0;
+ let count = 0;
 
-while (count < term) {
-    depositIncome = depositIncome + amount * (rate / 100)
-count = count + 1
+  while (count < term) {
+    depositIncome = depositIncome + amount * (rate / 100);
+    count = count + 1;
+  }
+  return depositIncome;
 }
-return depositIncome
-}
+const income_1 = getDepositIncome(
+  depositAmount,
+  yearlyRate,
+  depositTermInYears,)
+ console.log(income_1);
+ }
+wrapper()
 
-//total
+// const depositIncome_2 = getDepositIncome(1500, 16, 3);
+// const totalIncome = depositIncome_1 + depositIncome_2;
 
- const depositIncome_1 = getDepositIncome(depositAmount, yearlyRate, depositTermInYears)
- const depositIncome_2 = getDepositIncome(1500, 16, 3)
-const totalIncome = depositIncome_1 + depositIncome_2
-
-console.log(totalIncome);
+// console.log(totalIncome);
 
 
 
@@ -39,18 +44,14 @@ console.log(totalIncome);
 // //"лишние" аргументы функций
 // makeTea(3, "Earl Grey", "hey ma!" , 42);
 
-// // аргументы переданы в неверном порядке 
+// // аргументы переданы в неверном порядке
 // makeTea("Earl Grey" , 3)
-
 
 // // функция без параметров
 // function barkAThemoon() {
 // console.log("Woooooooooooo");
 // }
 //  barkAThemoon();
-
-
-
 
 // let dogName = "rover";
 // let dogWeigt = 23;
@@ -93,8 +94,6 @@ console.log(totalIncome);
 // bark("spike", 53)
 // bark("lady", 17)
 
-
-
 // const location_1 = 3;
 // const location_2 = 4;
 // const location_3 = 5;
@@ -116,7 +115,6 @@ console.log(totalIncome);
 //     alert("MISS!")
 // }
 
-
 // const inStock = true;
 // const onSale = false
 
@@ -137,7 +135,6 @@ console.log(totalIncome);
 // }
 // //     alert("Buy!!!");
 
-
 // const temp = 83
 // const willRain = true;
 // const humid = (willRain && temp > 80);
@@ -148,25 +145,16 @@ console.log(totalIncome);
 
 // const buyIt =(onSale && inStock) // false
 
-
-
 // let sum = +prompt("Укажите стартовую сумму", 1000 );
 // const persent = 15;
 // const result =2000;
 
 // let count = 0;
 
-// const depositTerm = +prompt("Укажите срок депозита" , 10) 
+// const depositTerm = +prompt("Укажите срок депозита" , 10)
 
 // while (count < depositTerm) {
 // sum = sum + sum * (persent / 100)
 // count = count + 1
 // document.write(count + ": " + sum + "<br>")
 // }
-
-
-
-
-
-
-
