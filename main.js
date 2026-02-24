@@ -1,26 +1,56 @@
-// depsit
-const depositAmount = 1000;
-const yearlyRate = 15;
-const depositTermInYears = 2;
-//
- function wrapper() {
-  function getDepositIncome(amount, rate, term) {
-  let depositIncome = 0;
- let count = 0;
+// 0 => 60
+// 1 => 50
+// 2 => 60
+// 3 => 58
+// 4 => 54 
+// 5 => 54
+// 6 => 58
+// 7 => 50
+// 8 => 52
+// 9 => 54
 
-  while (count < term) {
-    depositIncome = depositIncome + amount * (rate / 100);
-    count = count + 1;
-  }
-  return depositIncome;
-}
-const income_1 = getDepositIncome(
-  depositAmount,
-  yearlyRate,
-  depositTermInYears,)
- console.log(income_1);
- }
-wrapper()
+const scores = [60, 50, 60, 58, 54, 54, 58, 50, 52, 54]
+
+console.log(scores[0])
+console.log(scores[2])
+
+const pets = ["dog", "cat", "rat"]
+
+console.log(pets[2]);
+console.log(pets[3]);
+
+console.log(pets.length);
+console.log(scores.length);
+
+pets[2] ="parrot"
+console.log(pets);
+console.log(scores);
+
+
+
+// // depsit
+// const depositAmount = 1000;
+// const yearlyRate = 15;
+// const depositTermInYears = 2;
+// //
+//  function wrapper() {
+//   function getDepositIncome(amount, rate, term) {
+//   let depositIncome = 0;
+//  let count = 0;
+
+//   while (count < term) {
+//     depositIncome = depositIncome + amount * (rate / 100);
+//     count = count + 1;
+//   }
+//   return depositIncome;
+// }
+// const income_1 = getDepositIncome(
+//   depositAmount,
+//   yearlyRate,
+//   depositTermInYears,)
+//  console.log(income_1);
+//  }
+// wrapper()
 
 // const depositIncome_2 = getDepositIncome(1500, 16, 3);
 // const totalIncome = depositIncome_1 + depositIncome_2;
